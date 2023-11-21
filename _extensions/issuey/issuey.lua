@@ -14,9 +14,9 @@ end
 return {
   ["issue"] = function(args, _, meta)
     local id = args[1]
-    local url = _stringify(meta["repository.issue-url"])
-    local text = _stringify(meta["repository.issue-text"])
-    local title = _stringify(meta["repository.issue-title"])
+    local url = _stringify(meta["issuey.issue-url"])
+    local text = _stringify(meta["issuey.issue-text"])
+    local title = _stringify(meta["issuey.issue-title"])
     url = string.gsub(url, "%%id", id)
     text = string.gsub(text, "%%id", id)
     title = string.gsub(title, "%%id", id)
@@ -25,9 +25,9 @@ return {
 
   ["pr"] = function(args, _, meta)
     local id = args[1]
-    local url = _stringify(meta["repository.pull-request-url"])
-    local text = _stringify(meta["repository.pull-request-text"])
-    local title = _stringify(meta["repository.pull-request-title"])
+    local url = _stringify(meta["issuey.pull-request-url"])
+    local text = _stringify(meta["issuey.pull-request-text"])
+    local title = _stringify(meta["issuey.pull-request-title"])
     url = string.gsub(url, "%%id", id)
     text = string.gsub(text, "%%id", id)
     title = string.gsub(title, "%%id", id)

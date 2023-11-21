@@ -1,4 +1,4 @@
-# Create links to issues and pull requests using shortcodes
+# Create links to issues and pull requests in quarto using shortcodes
 
 This issue extension is for quarto and quartodoc.
 
@@ -13,13 +13,13 @@ If you're using version control, you will want to check in this directory.
 
 ## Using
 
-Create a qmd file (or project) with configuration for the `repository`. e.g.
+Create a `.qmd` file (or project) with configuration for `issuey`. e.g.
 
 ```md
 ---
 title: "Issue Example"
 
-repository:
+issuey:
    issue-url: "https://github.com/has2k1/plotnine/issues/%id"
    issue-text: "#%id"
    issue-title: "Issue: #%id"
